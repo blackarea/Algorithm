@@ -1,4 +1,4 @@
-package algorithm.BOJ10k;
+package algorithm.BOJ;
 
 import java.io.IOException;
 import java.util.Scanner;
