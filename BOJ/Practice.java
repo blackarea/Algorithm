@@ -2,28 +2,17 @@ package algorithm.BOJ;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.PriorityQueue;
 
 public class Practice {
     public static void main(String[] args) {
 
 
+        PriorityQueue<Integer> pq = new PriorityQueue<>();
+        pq.add(1);
+        System.out.println(pq.poll());
+        System.out.println(pq.poll());
 
-        int max = 0;
-        int number = 100000000;
-        int[] arr = new int[number];
-        for (int i = 0; i < number; i++) {
-            arr[i] = (int)(Math.random() * Integer.MAX_VALUE);
-        }
-
-        long before = System.currentTimeMillis();
-        for (int i = 0; i < number; i++) {
-            max = Math.max(max, arr[i]);
-        }
-
-        long after = System.currentTimeMillis();
-
-        System.out.println(max);
-        System.out.println(after - before);
     }
 
     public static String A(int c, String d) {
@@ -33,5 +22,6 @@ public class Practice {
         return d;
 
     }
+
 }
 
