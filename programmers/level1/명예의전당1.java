@@ -13,12 +13,12 @@ public class 명예의전당1 {
         int[] hallOfFame = new int[k];
 
         for (int i = 0; i < score.length; i++) {
-            if(i >= k){
-                if(hallOfFame[k - 1] < score[i]){
-                    hallOfFame[k - 1] = score[i];
-                }
+            if(i < k){
+                hallOfFame[0] = score[i];
             }else {
-                hallOfFame[i] = score[i];
+                if(hallOfFame[0] < score[i]){
+                    hallOfFame[0] = score[i];
+                }
             }
             Arrays.sort(hallOfFame);
             answer[i] = hallOfFame[i < k ? k - i - 1 : 0];
