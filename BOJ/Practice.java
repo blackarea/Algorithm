@@ -1,17 +1,13 @@
 package algorithm.BOJ;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.PriorityQueue;
+import java.util.*;
 
 public class Practice {
     public static void main(String[] args) {
 
-
-        PriorityQueue<Integer> pq = new PriorityQueue<>();
-        pq.add(1);
-        System.out.println(pq.poll());
-        System.out.println(pq.poll());
+        if("3".compareTo("3") == 0){
+            System.out.println("1");
+        }
 
     }
 
